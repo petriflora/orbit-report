@@ -49,5 +49,4 @@ export class AppComponent {
   this.displayList = matchingSatellites;
 }
 
-
 }

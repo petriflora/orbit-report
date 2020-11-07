@@ -4,16 +4,5 @@
     <input #searchTerm (keyup.enter)='search(searchTerm.value)' type='text' placeholder="Enter Search Term"/>
     <button (click)='search(searchTerm.value)'>Search</button>
 </div>
-<!-- <div>
-    <h3>Satellite Counts:</h3>
-<div class="counts">
-   <div>Total: <span>9</span></div>
-   <div>Space Debris: <span>1</span></div>
-   <div>Communication: <span>2</span></div>
-   <div>Probe: <span>2</span></div>
-   <div>Positioning: <span>1</span></div>
-   <div>Space Station: <span>2</span></div>
-   <div>Telescope: <span>1</span></div>
-</div>
-</div> -->
 
+<app-orbit-counts [satellites]="displayList"></app-orbit-counts>
